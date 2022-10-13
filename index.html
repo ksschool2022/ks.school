@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+    <meta charset="utf-8">
+    <title>Adobe XD</title>
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Prototype icon link for iOS -->
+    <link rel="apple-touch-icon" href="/static/images/xd_android_webclip_192-f68ab947e37c09acf69cea3122e60893bcc15cb4.png"/>
+    <!-- Home screen setting & prototype icon link for Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" href="/static/images/xd_android_webclip_192-f68ab947e37c09acf69cea3122e60893bcc15cb4.png"/>
+    <link rel="manifest" href="/static/manifest-d13de80b83503d86673e5b998f4c3ce69a6cab54.json">
+    <!-- Prototype icon link for IE -->
+    <link rel="shortcut icon" href="/static/images/xd_favicon-b2ee7867cb9be9ee4055df64f32dcd58f3461fe3.ico"/>
+    <!-- Metadata -->
+    <!-- SlackBot Metadata -->
+    <meta name="slack-app-id" content="A7P35MCT0"/>
+    <!-- Twitter Metadata -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="K’s school"/>
+    <meta name="twitter:description" content="12 Screens, Last modified on Feb 13, 2022 13:08 GMT"/>
+    <meta name="twitter:image:alt" content="Adobe XD"/>
+    <meta name="twitter:image" content="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:ee1558fb-b455-4231-bf92-4de6bb9ba686;revision=10?component_id=577d2e81-28ac-41b5-8db7-a13dbedb840f&api_key=CometServer1&access_token=1665015320_urn%3Aaaid%3Asc%3AUS%3Aee1558fb-b455-4231-bf92-4de6bb9ba686%3Bpublic_9ea34db0d12f293933cd4e30f6d3637f0496d708"/>
+    <!-- Facebook Metadata -->
+    <meta property="og:url" content="https://xd.adobe.com/view/ee1558fb-b455-4231-bf92-4de6bb9ba686-bb46/?fullscreen&hints=off"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="K’s school"/>
+    <meta property="og:description" content="12 Screens, Last modified on Feb 13, 2022 13:08 GMT"/>
+    <meta property="og:image" content="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:ee1558fb-b455-4231-bf92-4de6bb9ba686;revision=10?component_id=577d2e81-28ac-41b5-8db7-a13dbedb840f&api_key=CometServer1&access_token=1665015320_urn%3Aaaid%3Asc%3AUS%3Aee1558fb-b455-4231-bf92-4de6bb9ba686%3Bpublic_9ea34db0d12f293933cd4e30f6d3637f0496d708"/>
+    <script type="text/javascript" nonce="2d2fee61-2e3d-4b40-b4e9-69ab44f1e47d">
+    window.adobeid = {
+        client_id: "CometWeb1",
+        redirect_uri: location.href,
+        scope: "AdobeID,openid,creative_cloud,sao.ccprivate,sao.ccpublish,ab.manage,sao.comet_service",
+        locale: "ja-JP",
+        uses_redirect_mode: true,
+        autoValidateToken: true,
+        environment: 'prod',
+        optimizations: {
+            enable: true,
+            fastEvents: true,
+            prefetchSuSi: true
+        },
+        api_parameters: {
+            authorize: {
+                state: {
+                    "ac": "xd.adobe.com"
+                },
+                ctx_id: "xdweb_default"
+            }
+        },
+        onAccessTokenHasExpired: function() {
+            window.signOutIMSCallback && window.signOutIMSCallback();
+        },
+        onReady: function(context) {
+            imsLib2 = adobeIMS.version.startsWith('v2-');
+            window.onReadyIMSCallbackFlag = true;
+            window.onReadyContextHandler = context;
+            if (window.onReadyIMSCallback && imsLib2) {
+                window.onReadyIMSCallback(window.onReadyContextHandler);
+            } else if (window.onReadyIMSCallback) {
+                window.onReadyIMSCallback();
+            }
+        }
+    };
+    window.utilNavLoadCb = function() {
+        if (window.setUtilityNavConfig) {
+            window.setUtilityNavConfig();
+        }
+    };
+    </script>
+    <script id="imslib" src="https://auth.services.adobe.com/imslib/imslib.min.js" async defer></script>
+    <script src="/static/share-50d9a7e3c9efd9e937e0.js" async defer></script>
+    <link rel="stylesheet" href="/static/style/style-485fe23321be3bbcf86a0df3b4f649050b8d2609.css">
+    <script nonce="2d2fee61-2e3d-4b40-b4e9-69ab44f1e47d">
+    var utilNavScript = document.createElement("script");
+    utilNavScript.id = "utilNav";
+    utilNavScript.onload = function() {
+        utilNavLoadCb();
+    };
+    utilNavScript.async = true;
+    utilNavScript.defer = true;
+    utilNavScript.src = "https://prod.adobeccstatic.com/utilnav/9.1/utilitynav.js";
+    document.head.appendChild(utilNavScript);
+    </script>
+    <link rel="stylesheet" type="text/css" href="https://prod.adobeccstatic.com/utilnav/9.1/utilitynav.css">
+</head>
+<body>
+    <div id="container"></div>
+    <script nonce="2d2fee61-2e3d-4b40-b4e9-69ab44f1e47d">
+    (function(d) {
+        var config = {
+                kitId: "apl6lau",
+                classes: false,
+                evebts: false,
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement,
+            t = setTimeout(function() {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            }, config.scriptTimeout),
+            tk = d.createElement("script"),
+            f = false,
+            s = d.getElementsByTagName("script")[0],
+            a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function() {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded")
+                return;
+            f = true;
+            clearTimeout(t);
+            try {
+                Typekit.load(config)
+            } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+    window.configData = {
+        "webappContext": "web",
+        "detectedLanguage": "ja",
+        "detectedLocale": "ja-JP",
+        "environment": "production",
+        "isPageLocked": false,
+        "featureFlags": {
+            "fullscreenScale100": false,
+            "offlineViewer": false,
+            "toastNotification": true,
+            "inBrowserExportPhase2": true,
+            "imsV2": true,
+            "IMSCookieToken": false,
+            "lottieSpecs": true,
+            "oneTrustNewScript": true,
+            "fetchOwnerIDRepoMeta": false,
+            "htmlSnippetInfo": true,
+            "useLRS": true,
+            "layerNameVisibility": false,
+            "playerFFs": {
+                "lottieAndAudioSimultaneousPlayback": true,
+                "hyperlinksACMP": true
+            },
+            "saoDecommission": true
+        },
+        "urlType": "Storage Service",
+        "protectionType": "public",
+        "resourceURN": "urn:aaid:sc:US:ee1558fb-b455-4231-bf92-4de6bb9ba686",
+        "userId": "",
+        "prototypeCacheTokenData": {
+            "token": "1664996327_urn:aaid:sc:US:ee1558fb-b455-4231-bf92-4de6bb9ba686;public_471b1b93b5807e659963ac5ea4562b482117ed69"
+        }
+    };
+    window.configDataLoaded && window.configDataLoaded();
+    window.prototypeData = {
+        "manifest": {
+            "shouldLoadUnifiedApp": true,
+            "allowComments": false,
+            "shareModeViewMode": "ShareModeViewModeUserTesting",
+            "id": "urn:aaid:sc:US:ee1558fb-b455-4231-bf92-4de6bb9ba686",
+            "name": "K’s school",
+            "thumbnail": {
+                "id": "577d2e81-28ac-41b5-8db7-a13dbedb840f",
+                "path": "homeThumbnail.png",
+                "version": "10",
+                "revision": "10",
+                "component_id": "577d2e81-28ac-41b5-8db7-a13dbedb840f"
+            },
+            "interactions": {
+                "id": "036fe6bb-fdbf-4923-9cb4-0e92f73b527c",
+                "path": "interactions/interactions.json",
+                "version": "1",
+                "revision": "1"
+            },
+            "globalResources": {
+                "id": "4e8bbbae-4508-44e4-8955-8dc6e14c62c4",
+                "path": "globalResources/globalResources.json",
+                "version": "4",
+                "revision": "4"
+            },
+            "artboards": [{
+                "id": "fd5e3640-c9d9-4a77-b5d9-e5385f669742",
+                "name": "home ",
+                "bounds": {
+                    "height": 3462,
+                    "width": 750,
+                    "y": 0,
+                    "x": 8
+                },
+                "viewport": {
+                    "height": 1334
+                },
+                "components": [{
+                    "id": "94bbbd96-a369-45fb-aa4a-9a344394d4a1",
+                    "path": "artwork/artboard-fd5e3640-c9d9-4a77-b5d9-e5385f669742/graphics/graphicContent.agc",
+                    "version": "3",
+                    "revision": "3",
+                    "rel": "primary",
+                    "type": "agc"
+                }, {
+                    "id": "9b437d84-eaaf-4187-a762-741a3569dc6e",
+                    "path": "artwork/artboard-fd5e3640-c9d9-4a77-b5d9-e5385f669742/thumbnailGraphicContent.png",
+                    "version": "3",
+                    "revision": "3",
+                    "rel": "thumbnail"
+                }],
+                "resources": ["c4b70eb487fe89900aeed3334ed79d8b", "0ec575a786ae0b641fa1ad9a54ddefe9", "a9af788098348f5b8508c6021939a7a1", "3fb6a5b2ad7cd8d0d086d6f5dec718ad", "ac3baee905d1a3e1fac0ca78a05d7579", "5a42f8c81a9bdeb173b412e69653f66a", "524ac0cbeecb519715044f8d30996466"]
+            }, {
+                "id": "1851d0cc-270c-4216-8010-6e3fd3921a68",
+                "name": "メニュー",
+                "bounds": {
+                    "height": 1334,
+                    "width": 750,
+                    "y": 0,
+                    "x": 828
+                },
+                "viewport": {
+                    "height": 1334
+                },
+                "components": [{
+                    "id": "ec1681af-2637-4467-9fc6-2ab2fbc665e1",
+                    "path": "artwork/artboard-1851d0cc-270c-4216-8010-6e3fd3921a68/graphics/graphicContent.agc",
+                    "version": "1",
+                    "revision": "1",
+                    "rel": "primary",
+                    "type": "agc"
+                }, {
+                    "id": "7d6946ce-24e0-4dff-a9c9-481f0aca4c0a",
+                    "path": "artwork/artboard-1851d0cc-270c-4216-8010-6e3fd3921a68/thumbnailGraphicContent.png",
+                    "version": "1",
+                    "revision": "1",
+                    "rel": "thumbnail"
+                }]
+            }, {
+                "id": "49c7be8f-37e2-4d3a-a75b-704448c7743a",
+                "name": "授業スタイル",
+                "bounds": {
+                    "height": 3358,
+                    "width": 750,
+                    "y": 884,
+                    "x": -5955
+                },
+                "viewport": {
+                    "height": 1334
+                },
+                "components": [{
+                    "id": "9e3cfd97-44f7-4b52-8c3c-61e1131a57be",
+                    "path": "artwork/artboard-49c7be8f-37e2-4d3a-a75b-704448c7743a/graphics/graphicContent.agc",
+                    "version": "4",
+                    "revision": "4",
+                    "rel": "primary",
+                    "type": "agc"
+                }, {
+                    "id": "9b9bac58-2b12-4f7a-96d8-66560f0a1a98",
+                    "path": "artwork/artboard-49c7be8f-37e2-4d3a-a75b-704448c7743a/thumbnailGraphicContent.png",
+                    "version": "4",
+                    "revision": "4",
+                    "rel": "thumbnail"
+                }]
+            }, {
+                "id": "d333035a-53d0-4ca4-87f4-7116bf36faec",
+                "name": "算数・数学",
+                "bounds": {
+                    "height": 5875,
+                    "width": 750,
+                    "y": 884,
+                    "x": -4555
+                },
+                "viewport": {
+                    "height": 1334
+                },
+                "components": [{
+                    "id": "62215875-8b28-476a-a00f-bbedf9a369da",
+                    "path": "artwork/artboard-d333035a-53d0-4ca4-87f4-7116bf36faec/graphics/graphicContent.agc",
+                    "version": "0",
+                    "revision": "0",
+                    "rel": "primary",
+                    "type": "agc"
+                }, {
+                    "id": "2e2c2922-0eb3-4d40-9a5d-e2554b06a940",
+                    "path": "artwork/artboard-d333035a-53d0-4ca4-87f4-7116bf36faec/thumbnailGraphicContent.png",
+                    "version": "0",
+                    "revision": "0",
+                    "rel": "thumbnail"
+                }]
+            }, {
+                "id": "7667325f-8190-41cb-a648-4cb6849f9734",
+                "name": "国語",
+                "bounds": {
+                    "height": 3209,
+                    "width": 750,
+                    "y": 956,
+                    "x": -7212
+                },
+                "viewport": {
+                    "height": 1334
+                },
+                "components": [{
+                    "id": "eaa33f0d-9fe5-4cd9-a648-05d51601f9be",
+                    "path": "artwork/artboard-7667325f-8190-41cb-a648-4cb6849f9734/graphics/graphicContent.agc",
+                    "version": "0",
+                    "revision": "0",
+                    "rel": "primary",
+                    "type": "agc"
+                }, {
+                    "id": "09b44fbe-5435-467a-a777-a18efc1e6af2",
+                    "path": "artwork/artboard-7667325f-8190-41cb-a648-4cb6849f9734/thumbnailGraphicContent.png",
+                    "version": "0",
+                    "revision": "0",
+                    "rel": "thumbnail"
+                }]
+            }, {
+                "id": "c08741f7-d2b4-46cc-b231-801a83ddce5c",
+                "name": "料金・時間割",
+                "bounds": {
+                    "height": 3129,
+                    "width": 750,
+                    "y": 1619,
+                    "x": -2965
+                },
+                "viewport": {
+                    "height": 1334
+                },
+                "components": [{
+                    "id": "7b8538ba-8667-40e2-8377-40d74e453bd7",
+                    "path": "artwork/artboard-c08741f7-d2b4-46cc-b231-801a83ddce5c/graphics/graphicContent.agc",
+                    "version": "0",
+                    "revision": "0",
+                    "rel": "primary",
+                    "type": "agc"
+                }, {
+                    "id": "cf5dd92f-da5a-42bf-a7d1-b9e19e79472d",
+                    "path": "artwork/artboard-c08741f7-d2b4-46cc-b231-801a83ddce5c/thumbnailGraphicContent.png",
+                    "version": "0",
+                    "revision": "0",
+                    "rel": "thumbnail"
+                }]
+            }, {
+                "id": "b205aff9-7212-4b59-ac53-ceb0763748e8",
+                "name": "教師紹介",
+                "bounds": {
+                    "height": 3515,
+                    "width": 750,
+                    "y": 2614,
+                    "x": -1105
+                },
+                "viewport": {
+                    "height": 1334
+                },
+                "components": [{
+                    "id": "8085bfca-595c-43d4-997e-6c0368455764",
+                    "path": "artwork/artboard-b205aff9-7212-4b59-ac53-ceb0763748e8/graphics/graphicContent.agc",
+                    "version": "2",
+                    "revision": "2",
+                    "rel": "primary",
+                    "type": "agc"
+                }, {
+                    "id": "c1c123e9-ddd4-46e2-a819-3a88e2f72008",
+                    "path": "artwork/artboard-b205aff9-7212-4b59-ac53-ceb0763748e8/thumbnailGraphicContent.png",
+                    "version": "2",
+                    "revision": "2",
+                    "rel": "thumbnail"
+                }],
+                "resources": ["b4b818aef7fee5b4846ee76c3fdf98f4", "efd3f796b88edd23277a58b069ee3865", "7e73fe13ecf0993bf32cf23c87efdc45", "e0689d9059a959789c4490ae546c8fc8"]
+            }, {
+                "id": "407064a6-47b7-46f4-a61b-5dedb288bc9a",
+                "name": "英語",
+                "bounds": {
+                    "height": 4558,
+                    "width": 750,
+                    "y": 4418,
+                    "x": -7150
+                },
+                "viewport": {
+                    "height": 1334
+                },
+                "components": [{
+                    "id": "a45a44e7-c6ef-4b0a-9b3a-c84aa56956a0",
+                    "path": "artwork/artboard-407064a6-47b7-46f4-a61b-5dedb288bc9a/graphics/graphicContent.agc",
+                    "version": "1",
+                    "revision": "1",
+                    "rel": "primary",
+                    "type": "agc"
+                }, {
+                    "id": "9c3657bb-2e2d-4377-b3d0-c7832901529b",
+                    "path": "artwork/artboard-407064a6-47b7-46f4-a61b-5dedb288bc9a/thumbnailGraphicContent.png",
+                    "version": "1",
+                    "revision": "1",
+                    "rel": "thumbnail"
+                }]
+            }, {
+                "id": "9d316ff9-0eb8-4c3a-b698-c0254ff179bd",
+                "name": "理科",
+                "bounds": {
+                    "height": 2891,
+                    "width": 750,
+                    "y": 4418,
+                    "x": -6330
+                },
+                "viewport": {
+                    "height": 1334
+                },
+                "components": [{
+                    "id": "716f7d45-2356-4299-ae0d-f4dabe3901dd",
+                    "path": "artwork/artboard-9d316ff9-0eb8-4c3a-b698-c0254ff179bd/graphics/graphicContent.agc",
+                    "version": "0",
+                    "revision": "0",
+                    "rel": "primary",
+                    "type": "agc"
+                }, {
+                    "id": "5073293f-8dad-4e2a-828f-0d537f4ae1b3",
+                    "path": "artwork/artboard-9d316ff9-0eb8-4c3a-b698-c0254ff179bd/thumbnailGraphicContent.png",
+                    "version": "0",
+                    "revision": "0",
+                    "rel": "thumbnail"
+                }]
+            }, {
+                "id": "0b4564b9-313d-4bc1-8f83-bac6acffd700",
+                "name": "社会",
+                "bounds": {
+                    "height": 1334,
+                    "width": 750,
+                    "y": 4418,
+                    "x": -5510
+                },
+                "viewport": {
+                    "height": 1334
+                },
+                "components": [{
+                    "id": "ef73e661-dfb5-44cb-86c5-20c05a7d47c4",
+                    "path": "artwork/artboard-0b4564b9-313d-4bc1-8f83-bac6acffd700/graphics/graphicContent.agc",
+                    "version": "0",
+                    "revision": "0",
+                    "rel": "primary",
+                    "type": "agc"
+                }, {
+                    "id": "75820457-28fd-4bbe-96e7-814e9133596d",
+                    "path": "artwork/artboard-0b4564b9-313d-4bc1-8f83-bac6acffd700/thumbnailGraphicContent.png",
+                    "version": "0",
+                    "revision": "0",
+                    "rel": "thumbnail"
+                }]
+            }, {
+                "id": "b87f1fe6-f863-464c-b52d-58f8e081d8bb",
+                "name": "英検対策",
+                "bounds": {
+                    "height": 1334,
+                    "width": 750,
+                    "y": 5951,
+                    "x": -5491
+                },
+                "viewport": {
+                    "height": 1334
+                },
+                "components": [{
+                    "id": "d626e547-8a33-4289-ad3c-e73333b8af6e",
+                    "path": "artwork/artboard-b87f1fe6-f863-464c-b52d-58f8e081d8bb/graphics/graphicContent.agc",
+                    "version": "1",
+                    "revision": "1",
+                    "rel": "primary",
+                    "type": "agc"
+                }, {
+                    "id": "a830d1b5-db49-4d93-9985-b25915463b8a",
+                    "path": "artwork/artboard-b87f1fe6-f863-464c-b52d-58f8e081d8bb/thumbnailGraphicContent.png",
+                    "version": "1",
+                    "revision": "1",
+                    "rel": "thumbnail"
+                }]
+            }, {
+                "id": "1e2f1ec7-a4b1-43a6-b613-d475a3163297",
+                "name": " K’s School とは",
+                "bounds": {
+                    "height": 2524,
+                    "width": 750,
+                    "y": 0,
+                    "x": -1105
+                },
+                "viewport": {
+                    "height": 1334
+                },
+                "components": [{
+                    "id": "31150589-d9b2-4c8e-8e58-9430471eeec0",
+                    "path": "artwork/artboard-1e2f1ec7-a4b1-43a6-b613-d475a3163297/graphics/graphicContent.agc",
+                    "version": "0",
+                    "revision": "0",
+                    "rel": "primary",
+                    "type": "agc"
+                }, {
+                    "id": "7838013a-5b48-4b7a-a308-522a3c477779",
+                    "path": "artwork/artboard-1e2f1ec7-a4b1-43a6-b613-d475a3163297/thumbnailGraphicContent.png",
+                    "version": "0",
+                    "revision": "0",
+                    "rel": "thumbnail"
+                }]
+            }],
+            "renderLayers": null,
+            "resources": {
+                "c4b70eb487fe89900aeed3334ed79d8b": {
+                    "id": "000bbaa5-88bd-4dae-ae00-a966fdd4c6c0",
+                    "path": "resources/c4b70eb487fe89900aeed3334ed79d8b",
+                    "version": "0",
+                    "revision": "0"
+                },
+                "0ec575a786ae0b641fa1ad9a54ddefe9": {
+                    "id": "8d728833-6ae0-4811-a418-a0bc0f0d9e20",
+                    "path": "resources/0ec575a786ae0b641fa1ad9a54ddefe9",
+                    "version": "0",
+                    "revision": "0"
+                },
+                "a9af788098348f5b8508c6021939a7a1": {
+                    "id": "1b6bf7a6-84bb-4db2-a62a-5b790d6f5cdb",
+                    "path": "resources/a9af788098348f5b8508c6021939a7a1",
+                    "version": "0",
+                    "revision": "0"
+                },
+                "3fb6a5b2ad7cd8d0d086d6f5dec718ad": {
+                    "id": "ab808896-ebeb-4239-9014-af4d3af794ec",
+                    "path": "resources/3fb6a5b2ad7cd8d0d086d6f5dec718ad",
+                    "version": "0",
+                    "revision": "0"
+                },
+                "ac3baee905d1a3e1fac0ca78a05d7579": {
+                    "id": "11b30fc9-b84e-4992-89a7-ae15db08a294",
+                    "path": "resources/ac3baee905d1a3e1fac0ca78a05d7579",
+                    "version": "0",
+                    "revision": "0"
+                },
+                "5a42f8c81a9bdeb173b412e69653f66a": {
+                    "id": "c7d5b5d6-6b35-4b04-ac55-fe6499d61622",
+                    "path": "resources/5a42f8c81a9bdeb173b412e69653f66a",
+                    "version": "0",
+                    "revision": "0"
+                },
+                "524ac0cbeecb519715044f8d30996466": {
+                    "id": "3c28d826-a380-46e7-a150-844146528f93",
+                    "path": "resources/524ac0cbeecb519715044f8d30996466",
+                    "version": "0",
+                    "revision": "0"
+                },
+                "b4b818aef7fee5b4846ee76c3fdf98f4": {
+                    "id": "cfedeb05-8360-4f99-985e-1e818d3e0d04",
+                    "path": "resources/b4b818aef7fee5b4846ee76c3fdf98f4",
+                    "version": "0",
+                    "revision": "0"
+                },
+                "efd3f796b88edd23277a58b069ee3865": {
+                    "id": "fe527edc-1be0-4b91-8a44-6fe2ffb29c80",
+                    "path": "resources/efd3f796b88edd23277a58b069ee3865",
+                    "version": "0",
+                    "revision": "0"
+                },
+                "7e73fe13ecf0993bf32cf23c87efdc45": {
+                    "id": "c22b0234-7282-4e62-87f5-e7f0a69bb411",
+                    "path": "resources/7e73fe13ecf0993bf32cf23c87efdc45",
+                    "version": "0",
+                    "revision": "0"
+                },
+                "e0689d9059a959789c4490ae546c8fc8": {
+                    "id": "9b1dec02-3c51-4af1-8eff-c442d9a59d87",
+                    "path": "resources/e0689d9059a959789c4490ae546c8fc8",
+                    "version": "0",
+                    "revision": "0"
+                }
+            },
+            "docId": "54f16e2f-8687-4ede-928e-0fc2eade544d",
+            "homeArtboardType": "Web",
+            "disableNavigation": true,
+            "includeSpecs": false,
+            "gridVisible": true,
+            "gridType": "layout",
+            "includeAssets": false
+        },
+        "linkTemplate": {
+            "href": "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:ee1558fb-b455-4231-bf92-4de6bb9ba686{;revision}{?component_id,component_path}",
+            "data": {
+                "api_key": "CometServer1",
+                "access_token": "1665015320_urn:aaid:sc:US:ee1558fb-b455-4231-bf92-4de6bb9ba686;public_9ea34db0d12f293933cd4e30f6d3637f0496d708"
+            }
+        },
+        "ownerId": "621F78A4598FB16B0A495E2D@AdobeID",
+        "modifiedDate": 1644757729434,
+        "version": 10,
+        "appVersion": "2.29",
+        "manifestURL": "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:ee1558fb-b455-4231-bf92-4de6bb9ba686?component_id=manifest&api_key=CometServer1&access_token=1665015320_urn%3Aaaid%3Asc%3AUS%3Aee1558fb-b455-4231-bf92-4de6bb9ba686%3Bpublic_9ea34db0d12f293933cd4e30f6d3637f0496d708"
+    };
+    if (window.prototypeData && window.prototypeDataLoaded) {
+        window.prototypeDataLoaded();
+    }
+    window.target = {
+        mBoxes: {},
+        cookie: {},
+        organizationId: "",
+        serverState: {}
+    };
+    </script>
+    <script nonce="2d2fee61-2e3d-4b40-b4e9-69ab44f1e47d">
+    window.privacyConsentGiven = {
+        allCookies: false,
+        functionalCookies: false,
+        targetingCookies: false,
+        performanceCookies: false
+    };
+    window.fedsConfig = window.fedsConfig || {};
+    window.fedsConfig.privacy = window.fedsConfig.privacy || {};
+    window.fedsConfig.privacy.otDomainId = "7a5eb705-95ed-4cc4-a11d-0cc5760e93db";
+    </script>
+    <script type="text/javascript" nonce="2d2fee61-2e3d-4b40-b4e9-69ab44f1e47d">
+    function createAndDispatchEvent(eventName) {
+        window.dispatchEvent(new Event(eventName));
+    }
+    function checkConsent() {
+        var activeGroups = window.adobePrivacy && window.adobePrivacy.activeCookieGroups();
+        if (activeGroups) {
+            if (activeGroups.indexOf("C0002") === -1) {
+                window.privacyConsentGiven.performanceCookies = false;
+            } else {
+                window.privacyConsentGiven.performanceCookies = true;
+                createAndDispatchEvent("adobePrivacy:PerformanceCookies");
+            }
+            if (activeGroups.indexOf("C0003") === -1) {
+                window.privacyConsentGiven.functionalCookies = false;
+            } else {
+                window.privacyConsentGiven.functionalCookies = true;
+                createAndDispatchEvent("adobePrivacy:FunctionalCookies");
+            }
+            if (activeGroups.indexOf("C0004") === -1) {
+                window.privacyConsentGiven.targetingCookies = false;
+            } else {
+                window.privacyConsentGiven.targetingCookies = true;
+                createAndDispatchEvent("adobePrivacy:TargetingCookies");
+                if (!window.newRelicLoaded) {
+                    var newRelicScript = document.createElement("script");
+                    newRelicScript.type = "text/javascript";
+                    newRelicScript.onload = function() {
+                        window.newRelicLoaded = true;
+                        if (window.newRelicLoadedCallback) {
+                            window.newRelicLoadedCallback();
+                        }
+                    };
+                    newRelicScript.src = "/static/new-relic-6010f20f86d729edfa54cf36565f9e2051e2eb01.js";
+                    document.body.appendChild(newRelicScript);
+                }
+            }
+        }
+    }
+    window.addEventListener("adobePrivacy:PrivacyConsent", checkConsent);
+    window.addEventListener("adobePrivacy:PrivacyCustom", checkConsent);
+    window.addEventListener("adobePrivacy:PrivacyReject", checkConsent);
+    </script>
+    <script src="https://www.adobe.com/etc.clientlibs/globalnav/clientlibs/base/privacy-standalone.js"></script>
+    <script type="text/javascript" nonce="2d2fee61-2e3d-4b40-b4e9-69ab44f1e47d">
+    window.marketingtech = {
+        adobe: {
+            launch: {
+                property: "global",
+                environment: "production"
+            },
+            analytics: {
+                additionalAccounts: ""
+            },
+            target: false,
+            audienceManager: false
+        }
+    };
+    </script>
+    <script src="//www.adobe.com/marketingtech/main.min.js"></script>
+    <script nonce="2d2fee61-2e3d-4b40-b4e9-69ab44f1e47d">
+    try {
+        _satellite.pageBottom();
+    } catch (e) {}
+    </script>
+</body>
+</html>
